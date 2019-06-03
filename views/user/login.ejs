@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+<div class="container">
+<h1>Log In</h1>
+<form action="/user/login" method="POST">
+  <div class="form-group">
+    <label for="exampleInputText1">UserName</label>
+    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp" placeholder="Username" name="username">
+    <label for="exampleInputText1">Password</label>
+    <input type="password" class="form-control" id="exampleInputText1" aria-describedby="textHelp" placeholder="Password" name="password">
+
+  <button class="btn btn-lg btn-success">Log In</button>
+</form>
+</div>
+
+<% include ../partials/footer %>

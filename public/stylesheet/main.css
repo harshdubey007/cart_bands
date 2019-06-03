@@ -1,0 +1,22 @@
+img {
+	max-height: 300px;
+}
+
+/*body{
+	background-color: red;
+}*/
+
+.image{
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+
+/*#heading{
+	text-align: center;
+}*/
+
+body {
+  background: url("https://www.dcu.ie/sites/default/files/images/prospectus/jazz.jpg");
+  background-size: 300px 100px;  
+  background-size: contain;
+}

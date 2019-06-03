@@ -1,0 +1,28 @@
+<% include partials/header.ejs %>
+
+	<div class="container">
+
+		<% for(var i=0;i<gameCD.length;i++){  %>
+		<% if (gameCD[i].parent==nam)  {%>
+			<div class="col-sm-6 col-md-3">
+			   <div class="thumbnail">
+			   	<img src="<%= gameCD[i].image %>">
+				   	<div class="caption">
+						<h4><strong><%= gameCD[i].title %></strong></h4>
+					</div>
+					<div class="clearfix">
+					
+						<a href="/addToCart/<%= gameCD[i]._id %>/<%= gameCD[i].parent %>" class="btn btn-primary pull-right">Buy</a>
+						<a href="/remove/<%= gameCD[i]._id %>/<%= gameCD[i].parent %>" class="btn btn-primary pull-right">Remove</a>
+
+						<p class="pull-left"><strong> $ <%= gameCD[i].price %></strong></p>
+					
+					</div>
+				</div>
+			</div>
+			<% } %>
+		<%	} %>
+
+	</div>
+
+<% include partials/footer.ejs %>
